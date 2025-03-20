@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient( 135deg, #325adf 10%, #e7530f 100%);
+}
+#cont{
+    /* No specific styles needed here unless you plan to add more to the container */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px; /* Adjusted padding for better spacing */
+}
+nav h1{
+    color: white;
+    margin-left: 20px;
+    font-size: 3.5vh;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+#weather {
+    display: flex;
+    align-items: center; /* Align search box and button vertically */
+}
+#search-box{
+    width: 250px; /* Set a fixed width or adjust as needed */
+    padding: 15px;
+    height: 4.7vh;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-right: 10px; /* Space between input and button */
+}
+
+#search-box:hover{
+    box-shadow: 0 0 10px rgba(0,0,0);
+    transform: scale(1.05);
+}
+#search-box:focus{
+    transform: scale(1.03);
+}
+#btn{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex; /* Makes the button a flex container */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+}
+#btn img{
+    width: 4vh;
+    height: 4vh;
+    object-fit: cover;
+}
+#btn img:hover{
+    box-shadow: 0 0 10px rgba(0,0,0);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+#dimg{
+    height: 30vh;
+    width: 30vh;
+}
+#deg{
+    font-size: 12vh;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0);
+}
+#city{
+    font-size: 6vh;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+#humi{
+    display: flex;
+    margin: 8px;
+    font-size:  4vh;
+}
+#humi img{
+    width: 7vh;
+    height: 7vh;
+    object-fit: cover;
+    padding: 5px;
+}
+#humi1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0);
+}
+#wind1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0);
+}
+#wind{
+    display: flex;
+    margin: 8px;
+    font-size:  4vh;
+}
+#wind img{
+    width: 7vh;
+    height: 7vh;
+    object-fit: cover;
+    padding: 5px;
+}
+
+/* ********************************** */
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+        padding: 10px;
+    }
+    nav h1{
+        font-size: 4vh;
+        margin: 15px auto;
+        text-align: center;
+    }
+    #weather{
+        width: 100%; /* Make weather div full width */
+    }
+    #search-box{
+        width: 60vw;
+        height: 4.7vh;
+        border-radius: 50px;
+        padding: 13px;
+        margin-right: 0; /* Remove right margin for mobile */
+    }
+    #search-box:hover{
+        box-shadow: 0 0 10px rgba(0,0,0);
+        transform: scale(1.04);
+
+    }
+    #btn{
+        width: 80px; /* Set a fixed width for the button */
+        height: 80px; /* Set a fixed height for the button */
+        border-radius: 50px; /* Make it circular */
+        margin-left: auto;/*push button to the right*/
+    }
+    #btn img:hover{
+        box-shadow: 0 0 10px rgba(0,0,0);
+        transform: scale(1.05);
+    cursor: default;
+    }
+    #weather{
+        display: flex;
+    }
+    #weather input{
+        width: 100%;
+    }
+    .pic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    #dimg{
+height: 25vh;
+width: 25vh;
+    }
+    #deg{
+        font-size: 9vh;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0);
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+    }
+    #humi{
+        display: flex;
+        margin: 8px;
+        font-size:  3vh;
+    }
+    #humi img{
+        width: 5vh;
+        height: 5vh;
+        object-fit: cover; }
+    }
